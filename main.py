@@ -10,7 +10,7 @@ def get_image_colors(image_path, num_colors):
     # Load image
     image = Image.open(image_path)
     image = image.convert('RGB')  # Convert image to RGB mode
-    image = image.resize((500, 500))  # Resize the image to reduce processing time
+    image = image.resize((200, 200))  # Resize the image to reduce processing time
 
     # Convert image into an array of RGB values
     image_array = np.array(image)
